@@ -1,13 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .lt-top-menu-item {
-  @apply py-1 hover:text-light-coffee relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-light-coffee after:transition-all after:duration-300 after:ease-in-out;
+  @apply py-1 hover:text-light-coffee relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:w-0 hover:after:lg:w-full after:lg:h-0.5 after:lg:bg-light-coffee after:lg:transition-all after:lg:duration-300 after:lg:ease-in-out;
+}
+.lt-top-menu-item-active {
+  @apply text-gray-800;
 }
 .lt-icon {
   @apply w-5 h-5 inline-block;
 }
 .lt-badge-circle {
   @apply text-xs text-center rounded-full px-1.5;
+}
+.lt-top-menu-expanded {
+  @apply absolute bg-white top-10 w-full text-center animate-slideDown;
 }
