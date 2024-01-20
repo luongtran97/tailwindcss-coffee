@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.lt-top-menu-item {
+  @apply py-1 hover:text-light-coffee relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-light-coffee after:transition-all after:duration-300 after:ease-in-out;
+}
+.lt-icon {
+  @apply w-5 h-5 inline-block;
+}
+.lt-badge-circle {
+  @apply text-xs text-center rounded-full px-1.5;
+}
