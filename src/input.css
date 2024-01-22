@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .lt-top-menu-item {
-  @apply py-1 hover:text-light-coffee relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:w-0 hover:after:lg:w-full after:lg:h-0.5 after:lg:bg-light-coffee after:lg:transition-all after:lg:duration-300 after:lg:ease-in-out;
+  @apply py-1 hover:text-coffee-200 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:w-0 hover:after:lg:w-full after:lg:h-0.5 after:lg:bg-coffee-200 after:lg:transition-all after:lg:duration-300 after:lg:ease-in-out;
 }
 .lt-top-menu-item-active {
   @apply text-gray-800;
@@ -18,4 +18,16 @@
 }
 .lt-top-menu-expanded {
   @apply absolute bg-white top-10 w-full text-center animate-slideDown;
+}
+.lt-subheadline {
+  @apply flex justify-center items-center mb-24;
+}
+.lt-subheadline-decoreline {
+  @apply w-8 h-px bg-gray-200;
+}
+.lt-subheadline-label {
+  @apply mx-4 tracking-widest text-gray-500 font-medium text-xs uppercase text-center;
+}
+.lt-button {
+  @apply text-center uppercase tracking-widest py-4 px-8 cursor-pointer text-[13px] font-semibold hover:bg-opacity-90;
 }
